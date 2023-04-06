@@ -2040,8 +2040,8 @@ height: 100%;
   @media (max-width: 768px) {
 	/* Apply smaller width and height on screens smaller than 768px */
 	.logo img {
-	  width: 350px;
-	  height: 75px;
+	  width: 250px;
+	  height: 50px;
 	}
   }
 
