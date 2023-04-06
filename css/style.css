@@ -22,7 +22,6 @@ html, body {
 	height: 100%;
 	font-family: "Cabin", sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
@@ -2028,6 +2027,30 @@ height: 100%;
 		bottom: -200px;
 	}
 }
+@media (max-width: 768px) {
+	/* Apply smaller font size on screens smaller than 768px */
+	.hero-text h1 {
+	  font-size: 4rem;
+	}
+	
+	.hero-text p {
+	  font-size: 1.2rem;
+	}
+  }
+  @media (max-width: 768px) {
+	/* Apply smaller width and height on screens smaller than 768px */
+	.logo img {
+	  width: 350px;
+	  height: 75px;
+	}
+  }
+
+  @media (max-width: 768px) {
+	/* Hide the parallax section on screens smaller than 768px */
+	.parallax-section {
+	  display: none;
+	}
+  }
 @media only screen and (min-width: 1200px) and (max-width: 1250px) {
 	.hp-room-items .hp-room-item .hr-text {
 		bottom: -288px;
