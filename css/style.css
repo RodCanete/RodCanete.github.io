@@ -1212,6 +1212,68 @@ height: 100%;
 	transform: translateY(-50%);
   }
   
+
+/*---------------------
+  Dining
+-----------------------*/
+
+.menu {
+	display: flex;
+	margin-top: 30px;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: start;
+	transition: 1s;
+}
+.menu-title {
+	color: #19191A;
+	text-align: center;
+	padding-top: 100px;
+	font-family: "Lora", serif;
+}
+.menu-tagline {
+	font-size: 18px;
+    color: #707079;
+    text-align: center;
+	padding-top: 5px;
+	padding-bottom: 50px;
+}
+.menu :hover {
+	transform: scale(1.25);
+	background: white;
+	box-shadow: 2px 2px 2px #ffffff;
+	z-index: 5;
+	transition: 0.6s;
+}
+.menu img {
+	height: 90%;
+	width: auto;
+	border-radius: 40px;
+}
+.menu-food-name {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	color: #212529;
+}
+.menu-food-price {
+	display: inline-block;
+	margin-left: 7px;
+	color:#212529;
+	width: 50px;
+}
+.menu-choices {
+	height: 200px;
+}
+.rating {
+	display: inline-block;
+	margin-right: 25px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+.rating i {
+	color: #f5b917;
+}
+
 /*---------------------
   Room Section
 -----------------------*/
