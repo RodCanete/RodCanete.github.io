@@ -1219,6 +1219,7 @@ height: 100%;
 
 .menu {
 	display: flex;
+	flex-wrap: wrap;
 	margin-top: 30px;
 	flex-direction: row;
 	justify-content: space-between;
@@ -1238,10 +1239,17 @@ height: 100%;
 	padding-top: 5px;
 	padding-bottom: 50px;
 }
-.menu :hover {
+/* .menu :hover {
 	transform: scale(1.25);
-	background: white;
-	box-shadow: 2px 2px 2px #ffffff;
+	background: #f8f4f4;
+	box-shadow: 2px 2px 2px #f8f4f4;
+	z-index: 5;
+	transition: 0.6s;
+} */
+.menu-choices :hover {
+	transform: scale(1.55);
+	background: #f8f4f4;
+	box-shadow: 2px 2px 2px #f8f4f4;
 	z-index: 5;
 	transition: 0.6s;
 }
