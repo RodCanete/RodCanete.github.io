@@ -1,23 +1,3 @@
-/*------------------------------------------------------------------
-[Table of contents]
-
-1.  Default CSS
-	1.1	Variables
-	1.2	Mixins
-	1.3	Flexbox
-	1.4	Reset
-2.  Helper CSS
-3.  Header Section
-4.  Hero Section
-5.  About Section
-6.  Services Section
-7.  Testimonial Section
-8.  Blog Section
-9.  Contact
-10.  Footer Style
-
--------------------------------------------------------------------*/
-
 html, body {
 	height: 100%;
 	font-family: "Cabin", sans-serif;
@@ -354,7 +334,7 @@ ul, ol {
 }
 .top-nav .tn-right .top-social {
 	display: inline-block;
-	margin-right: 140px;
+	margin-right: 287px;
 	padding: 13px 0;
 }
 .top-nav .tn-right .top-social a {
@@ -540,7 +520,7 @@ ul, ol {
 	display: none;
 }
 
-/*Parrallax
+/*Parallax
 */
 .parallax-section {
 	position: relative;
@@ -1216,6 +1196,11 @@ height: 100%;
 /*---------------------
   Dining
 -----------------------*/
+.dining-main-img {
+	width: 50%;
+	position: relative;
+	padding-right: 10px;
+}
 
 .menu {
 	display: flex;
@@ -1238,10 +1223,10 @@ height: 100%;
 	padding-top: 5px;
 	padding-bottom: 50px;
 }
-.menu :hover {
-	transform: scale(1.25);
-	background: white;
-	box-shadow: 2px 2px 2px #ffffff;
+.menu-choices :hover {
+	transform: scale(1.63);
+	background: #F6F6F6;
+	box-shadow: 2px 2px 2px #F6F6F6;
 	z-index: 5;
 	transition: 0.6s;
 }
@@ -1322,29 +1307,6 @@ height: 100%;
 .room-item .ri-text .primary-btn {
 	color: #19191a;
 }
-.room-pagination {
-	text-align: center;
-	padding-top: 20px;
-}
-.room-pagination a {
-	font-size: 16px;
-	color: #707079;
-	border: 1px solid #EFD4B9;
-	border-radius: 2px;
-	padding: 7px 13px 5px;
-	margin-right: 7px;
-	display: inline-block;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-.room-pagination a:last-child {
-	margin-right: 0;
-}
-.room-pagination a:hover {
-	background: #A7727D;
-	color: #ffffff;
-}
 
 /*-----------------------
   Room Details Section
@@ -1418,231 +1380,6 @@ height: 100%;
 .room-details-item .rd-text p.f-para {
 	margin-bottom: 22px;
 }
-.rd-reviews {
-	padding-top: 55px;
-	border-top: 1px solid #e5e5e5;
-	margin-bottom: 50px;
-}
-.rd-reviews h4 {
-	color: #19191a;
-	letter-spacing: 1px;
-	margin-bottom: 45px;
-}
-.rd-reviews .review-item {
-	margin-bottom: 32px;
-}
-.rd-reviews .review-item .ri-pic {
-	float: left;
-	margin-right: 30px;
-}
-.rd-reviews .review-item .ri-pic img {
-	height: 70px;
-	width: 70px;
-	border-radius: 50%;
-}
-.rd-reviews .review-item .ri-text {
-	overflow: hidden;
-	position: relative;
-	padding-left: 30px;
-}
-.rd-reviews .review-item .ri-text:before {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 1px;
-	height: 100%;
-	background: #e9e9e9;
-	content: "";
-}
-.rd-reviews .review-item .ri-text span {
-	font-size: 12px;
-	color: #A7727D;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-}
-.rd-reviews .review-item .ri-text .rating {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-.rd-reviews .review-item .ri-text .rating i {
-	color: #f5b917;
-}
-.rd-reviews .review-item .ri-text h5 {
-	color: #19191a;
-	margin-top: 4px;
-	margin-bottom: 8px;
-}
-.rd-reviews .review-item .ri-text p {
-	color: #707079;
-	margin-bottom: 0;
-}
-.review-add h4 {
-	color: #19191a;
-	letter-spacing: 1px;
-	margin-bottom: 45px;
-}
-.review-add .ra-form input {
-	width: 100%;
-	height: 50px;
-	border: 1px solid #e5e5e5;
-	font-size: 16px;
-	color: #aaaab3;
-	padding-left: 20px;
-	margin-bottom: 25px;
-}
-.review-add .ra-form input::-webkit-input-placeholder {
-	color: #aaaab3;
-}
-.review-add .ra-form input::-moz-placeholder {
-	color: #aaaab3;
-}
-.review-add .ra-form input:-ms-input-placeholder {
-	color: #aaaab3;
-}
-.review-add .ra-form input::-ms-input-placeholder {
-	color: #aaaab3;
-}
-.review-add .ra-form input::placeholder {
-	color: #aaaab3;
-}
-.review-add .ra-form h5 {
-	font-size: 20px;
-	color: #19191a;
-	margin-bottom: 24px;
-	float: left;
-	margin-right: 10px;
-}
-.review-add .ra-form .rating {
-	padding-top: 3px;
-	display: inline-block;
-}
-.review-add .ra-form .rating i {
-	color: #f5b917;
-	font-size: 16px;
-}
-.review-add .ra-form textarea {
-	width: 100%;
-	height: 132px;
-	border: 1px solid #e5e5e5;
-	font-size: 16px;
-	color: #aaaab3;
-	padding-left: 20px;
-	padding-top: 12px;
-	margin-bottom: 24px;
-	resize: none;
-}
-.review-add .ra-form textarea::-webkit-input-placeholder {
-	color: #aaaab3;
-}
-.review-add .ra-form textarea::-moz-placeholder {
-	color: #aaaab3;
-}
-.review-add .ra-form textarea:-ms-input-placeholder {
-	color: #aaaab3;
-}
-.review-add .ra-form textarea::-ms-input-placeholder {
-	color: #aaaab3;
-}
-.review-add .ra-form textarea::placeholder {
-	color: #aaaab3;
-}
-.review-add .ra-form button {
-	font-size: 13px;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: #ffffff;
-	letter-spacing: 2px;
-	background: #A7727D;
-	border: none;
-	padding: 14px 34px 13px;
-	display: inline-block;
-}
-.room-booking {
-	padding: 0 30px 0 40px;
-}
-.room-booking h3 {
-	color: #19191a;
-	margin-bottom: 30px;
-}
-.room-booking form .check-date {
-	position: relative;
-	margin-bottom: 15px;
-}
-.room-booking form .check-date label {
-	font-size: 14px;
-	color: #707079;
-	display: block;
-	margin-bottom: 10px;
-}
-.room-booking form .check-date input {
-	width: 100%;
-	height: 50px;
-	border: 1px solid #ebebeb;
-	border-radius: 2px;
-	font-size: 16px;
-	color: #19191a;
-	text-transform: uppercase;
-	font-weight: 500;
-	padding-left: 20px;
-}
-.room-booking form .check-date i {
-	color: #A7727D;
-	position: absolute;
-	right: 18px;
-	bottom: 17px;
-}
-.room-booking form .select-option {
-	margin-bottom: 15px;
-}
-.room-booking form .select-option label {
-	font-size: 14px;
-	color: #707079;
-	display: block;
-	margin-bottom: 10px;
-}
-.room-booking form .select-option .nice-select {
-	border-radius: 2px;
-	border: 1px solid #ebebeb;
-	height: 50px;
-	line-height: 50px;
-	outline: none;
-	padding-left: 20px;
-	width: 100%;
-	float: none;
-}
-.room-booking form .select-option .nice-select:after {
-	border-bottom: 2px solid #A7727D;
-	border-right: 2px solid #A7727D;
-	height: 10px;
-	margin-top: 0;
-	right: 20px;
-	width: 10px;
-	top: 36%;
-}
-.room-booking form .select-option .nice-select span {
-	font-size: 16px;
-	color: #19191a;
-	text-transform: uppercase;
-	font-weight: 500;
-}
-.room-booking form .select-option .nice-select .list {
-	margin-top: 0;
-	width: 100%;
-}
-.room-booking form button {
-	display: block;
-	font-size: 14px;
-	text-transform: uppercase;
-	border: 1px solid #A7727D;
-	border-radius: 2px;
-	color: #A7727D;
-	font-weight: 500;
-	background: transparent;
-	width: 100%;
-	height: 46px;
-	margin-top: 30px;
-}
 
 /*---------------------
   Blog Section
@@ -1692,13 +1429,6 @@ height: 100%;
 	font-size: 10px;
 	color: #ffffff;
 	letter-spacing: 3px;
-}
-.load-more {
-	text-align: center;
-	padding-top: 30px;
-}
-.load-more .primary-btn {
-	color: #19191a;
 }
 
 /*----------------------------
@@ -1789,16 +1519,16 @@ height: 100%;
 	color: #707079;
 	line-height: 30px;
 }
-.blog-details-text .tag-share {
+.blog-details-text {
 	overflow: hidden;
 	border-top: 1px solid #ebebeb;
 	padding-top: 30px;
 	margin-bottom: 75px;
 }
-.blog-details-text .tag-share .tags {
+.blog-details-text {
 	float: left;
 }
-.blog-details-text .tag-share .tags a {
+.blog-details-text {
 	font-size: 12px;
 	color: #707079;
 	background: #ebebeb;
@@ -1813,39 +1543,39 @@ height: 100%;
 	transition: all 0.3s;
 	margin-right: 6px;
 }
-.blog-details-text .tag-share .tags a:hover {
+.blog-details-text {
 	color: #ffffff;
 	background: #A7727D
 	;
 }
-.blog-details-text .tag-share .social-share {
+.blog-details-text {
 	float: right;
 }
-.blog-details-text .tag-share .social-share span {
+.blog-details-text {
 	display: inline-block;
 	font-size: 18px;
 	color: #707079;
 }
-.blog-details-text .tag-share .social-share a {
+.blog-details-text {
 	display: inline-block;
 	font-size: 16px;
 	color: #707079;
 	margin-left: 30px;
 }
-.blog-details-text .comment-option {
+.blog-details-text {
 	margin-bottom: 75px;
 }
-.blog-details-text .comment-option h4 {
+.blog-details-text {
 	color: #19191a;
 	margin-bottom: 35px;
 }
-.blog-details-text .comment-option .single-comment-item {
+.blog-details-text {
 	margin-bottom: 30px;
 }
-.blog-details-text .comment-option .single-comment-item.first-comment .sc-text {
+.blog-details-text .sc-text {
 	padding-left: 22px;
 }
-.blog-details-text .comment-option .single-comment-item.first-comment .sc-text:before {
+.blog-details-text .sc-text:before {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1854,14 +1584,14 @@ height: 100%;
 	background: #ebebeb;
 	content: "";
 }
-.blog-details-text .comment-option .single-comment-item.reply-comment {
+.blog-details-text {
 	padding-left: 120px;
 	margin-bottom: 52px;
 }
-.blog-details-text .comment-option .single-comment-item.second-comment .sc-text {
+.blog-details-text .sc-text {
 	padding-left: 22px;
 }
-.blog-details-text .comment-option .single-comment-item.second-comment .sc-text:before {
+.blog-details-text .sc-text:before {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1870,36 +1600,36 @@ height: 100%;
 	background: #ebebeb;
 	content: "";
 }
-.blog-details-text .comment-option .single-comment-item .sc-author {
+.blog-details-text {
 	float: left;
 	margin-right: 28px;
 }
-.blog-details-text .comment-option .single-comment-item .sc-author img {
+.blog-details-text {
 	height: 70px;
 	width: 70px;
 	border-radius: 50%;
 }
-.blog-details-text .comment-option .single-comment-item .sc-text {
+.blog-details-text .sc-text {
 	display: table;
 	position: relative;
 }
-.blog-details-text .comment-option .single-comment-item .sc-text span {
+.blog-details-text .sc-text span {
 	font-size: 12px;
 	color: #A7727D;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
-.blog-details-text .comment-option .single-comment-item .sc-text h5 {
+.blog-details-text .sc-text h5 {
 	font-size: 20px;
 	color: #19191a;
 	margin-top: 4px;
 	margin-bottom: 8px;
 }
-.blog-details-text .comment-option .single-comment-item .sc-text p {
+.blog-details-text .sc-text p {
 	color: #707079;
 	margin-bottom: 18px;
 }
-.blog-details-text .comment-option .single-comment-item .sc-text a {
+.blog-details-text .sc-text a {
 	display: inline-block;
 	color: #19191a;
 	font-size: 14px;
@@ -1914,16 +1644,16 @@ height: 100%;
 	transition: all 0.3s;
 	margin-right: 10px;
 }
-.blog-details-text .comment-option .single-comment-item .sc-text a:hover {
+.blog-details-text .sc-text a:hover {
 	background: #A7727D;
 	color: #ffffff;
 	border-color: #A7727D;
 }
-.blog-details-text .leave-comment h4 {
+.blog-details-text {
 	color: #19191a;
 	margin-bottom: 35px;
 }
-.blog-details-text .leave-comment .comment-form input {
+.blog-details-text {
 	width: 100%;
 	height: 50px;
 	color: #707079;
@@ -1936,10 +1666,10 @@ height: 100%;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
-.blog-details-text .leave-comment .comment-form input:focus {
+.blog-details-text {
 	border-color: #A7727D;
 }
-.blog-details-text .leave-comment .comment-form textarea {
+.blog-details-text {
 	width: 100%;
 	height: 116px;
 	color: #707079;
@@ -1954,10 +1684,10 @@ height: 100%;
 	resize: none;
 	padding-top: 12px;
 }
-.blog-details-text .leave-comment .comment-form textarea:focus {
+.blog-details-text {
 	border-color: #A7727D;
 }
-.blog-details-text .leave-comment .comment-form button {
+.blog-details-text {
 	font-size: 13px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -1968,21 +1698,6 @@ height: 100%;
 	padding: 14px 42px 13px;
 	display: inline-block;
 	border-radius: 2px;
-}
-
-/*---------------------
-  Recommend Blog
------------------------*/
-
-.recommend-blog-section {
-	padding-top: 65px;
-	padding-bottom: 50px;
-}
-.recommend-blog-section .section-title {
-	margin-bottom: 37px;
-}
-.recommend-blog-section .section-title h2 {
-	margin-top: 0;
 }
 
 /*---------------------
@@ -2081,6 +1796,16 @@ height: 100%;
 .map iframe {
 	width: 100%;
 }
+.rand-info {
+	display: grid; 
+	grid-template-columns: 1fr 1fr;
+}
+.info {
+	padding-top: 70px; padding-bottom: 20px;
+}
+.info-txt {
+	color: #707079;
+}
 
 /*-------------------------------- Responsive Media Styles --------------------------------*/
 
@@ -2121,6 +1846,11 @@ height: 100%;
 @media only screen and (min-width: 1200px) {
 	.container {
 		max-width: 1170px;
+	}
+	.top-nav .tn-right .top-social {
+		display: inline-block;
+		margin-right: 278px;
+		padding: 13px 0;
 	}
 }
 
@@ -2168,6 +1898,11 @@ height: 100%;
 		margin-left: 0px;
 		color:#212529;
 		width: 50px;
+	}
+	.top-nav .tn-right .top-social {
+		display: inline-block;
+		margin-right: 200px;
+		padding: 13px 0;
 	}
 }
 @media only screen and (max-width: 991px) {
@@ -2416,10 +2151,6 @@ height: 100%;
 	.about-pic img {
 		margin-bottom: 20px;
 	}
-	.room-booking {
-		padding: 0;
-		margin-top: 40px;
-	}
 	.contact-form {
 		padding-top: 30px;
 	}
@@ -2454,6 +2185,12 @@ height: 100%;
 		margin-top: 0px;
 		margin-bottom: 0px;
 		color: #212529;
+	}
+	.dining-main-img {
+		width: 100%;
+		position: relative;
+		padding-right: 10px;
+		padding-left: 10px;
 	}
 }
 
@@ -2613,29 +2350,33 @@ height: 100%;
 			color: #212529;
 			font-size: 12px;
 			}
-/* Small Mobile: 320px */
+			.dining-main-img {
+				width: 100%;
+				position: relative;
+				padding-right: 20px;
+			}
 		}
+
+/* Small Mobile: 320px */
+
 @media only screen and (max-width: 479px) {
 	.footer-section .copyright-option ul li {
 		margin-bottom: 5px;
 	}
-	.video-section {
-		padding-top: 80px;
-	}
-	.rd-reviews .review-item .ri-pic, .blog-details-text .comment-option .single-comment-item .sc-author {
+	.rd-reviews .review-item .ri-pic, .blog-details-text {
 		float: none;
 		margin-bottom: 30px;
 	}
 	.rd-reviews .review-item .ri-text .rating {
 		position: relative;
 	}
-	.rd-reviews .review-item .ri-text, .blog-details-text .comment-option .single-comment-item.second-comment .sc-text, .blog-details-text .comment-option .single-comment-item.first-comment .sc-text {
+	.rd-reviews .review-item .ri-text, .blog-details-text .sc-text, .blog-details-text .sc-text {
 		padding-left: 0;
 	}
 	.blog-details-text .comment-option .single-comment-item.reply-comment {
 		padding-left: 30px;
 	}
-	.rd-reviews .review-item .ri-text:before, .blog-details-text .comment-option .single-comment-item.first-comment .sc-text:before, .blog-details-text .comment-option .single-comment-item.second-comment .sc-text:before {
+	.rd-reviews .review-item .ri-text:before, .blog-details-text .sc-text:before, .blog-details-text .sc-text:before {
 		display: none;
 	}
 	.blog-details-hero {
@@ -2647,11 +2388,17 @@ height: 100%;
 		margin-right: 0;
 		margin-bottom: 10px;
 	}
-	.blog-details-text .tag-share .tags a {
+	.blog-details-text {
 		margin-bottom: 6px;
 	}
-	.blog-details-text .comment-option .single-comment-item .sc-text a {
+	.blog-details-text .sc-text a {
 		margin-bottom: 10px;
+	}
+	.dining-main-img {
+		width: 120%;
+		position: relative;
+		padding-right: 20px;
+		padding-left: 20px;
 	}
 }
 @media (max-width: 1300px) {

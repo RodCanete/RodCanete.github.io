@@ -46,22 +46,13 @@
       <div class="canvas-close">
         <i class="icon_close"></i>
       </div>
-      <div class="search-icon search-switch">
-        <i class="icon_search"></i>
-      </div>
       <div class="header-configure-area">
         <div class="language-option">
           <img
             src="img/flag.jpg"
             alt="An Image of United Kingdom Flag to Represent Language Used"
           />
-          <span>EN <i class="fa fa-angle-down"></i></span>
-          <div class="flag-dropdown">
-            <ul>
-              <li><a href="#">Zi</a></li>
-              <li><a href="#">Fr</a></li>
-            </ul>
-          </div>
+          <span>EN</span>
         </div>
       </div>
       <nav class="mainmenu mobile-menu">
@@ -69,9 +60,8 @@
           <li class="active"><a href="./index.html">Home</a></li>
           <li><a href="./rooms.html">Rooms</a></li>
           <li><a href="./about-us.html">About Us</a></li>
-          <li> <a href="./dining.html">Dining</a>
-          </li>
-          <li><a href="./blog.html">Offers</a></li>
+          <li><a href="./dining.html">Dining</a></li>
+          <li><a href="./offers.html">Offers</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -117,13 +107,7 @@
                     src="img/flag.jpg"
                     alt="An Image of United Kingdom Flag to Represent Language Used"
                   />
-                  <span>EN <i class="fa fa-angle-down"></i></span>
-                  <div class="flag-dropdown">
-                    <ul>
-                      <li><a href="#">Zi</a></li>
-                      <li><a href="#">Fr</a></li>
-                    </ul>
-                  </div>
+                  <span>EN</span>
                 </div>
               </div>
             </div>
@@ -150,13 +134,10 @@
                     <li>
                       <a href="./dining.html">Dining</a>
                     </li>
-                    <li class="active"><a href="./blog.html">Offers</a></li>
+                    <li class="active"><a href="./offers.html">Offers</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                   </ul>
                 </nav>
-                <div class="nav-right search-switch">
-                  <i class="icon_search"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -189,7 +170,10 @@
         <div class="row">
           <div class="col-lg-8">
             <div class="room-details-item">
-              <img src="img/blog/blog-3.jpg" alt="" />
+              <img
+                src="img/blog/blog-3.jpg"
+                alt="An Image of Amanviro's Pool #1"
+              />
               <div class="rd-text">
                 <div class="rd-title">
                   <h3>Long Stay Offers</h3>
@@ -205,7 +189,19 @@
                 </div>
                 <h2>₱5,500<span>/Pernight</span></h2>
                 <p class="f-para">
-                  This package is ideal for guests who plan to stay for an extended period of time and want to save money on their accommodation. The package offers a discounted rate of ₱5,500 per night for guests who stay for a minimum of 7 nights. The longer the stay, the bigger the discount. This package deal is perfect for guests who want to take their time and fully immerse themselves in the hotel and resort experience. With this package, guests can enjoy all the amenities and services of the hotel and resort at a more affordable price. The website may provide more information about the specific terms and conditions of this offer, such as the minimum stay requirements and the booking process, so be sure to check those before making a reservation.
+                  This package is ideal for guests who plan to stay for an
+                  extended period of time and want to save money on their
+                  accommodation. The package offers a discounted rate of ₱5,500
+                  per night for guests who stay for a minimum of 7 nights. The
+                  longer the stay, the bigger the discount. This package deal is
+                  perfect for guests who want to take their time and fully
+                  immerse themselves in the hotel and resort experience. With
+                  this package, guests can enjoy all the amenities and services
+                  of the hotel and resort at a more affordable price. The
+                  website may provide more information about the specific terms
+                  and conditions of this offer, such as the minimum stay
+                  requirements and the booking process, so be sure to check
+                  those before making a reservation.
                 </p>
               </div>
             </div>
@@ -260,8 +256,11 @@
               <div class="ft-newslatter">
                 <h6>New latest</h6>
                 <p>Get the latest updates and offers.</p>
-                <form action="#" class="fn-form">
-                  <input type="text" placeholder="Email" />
+                <form
+                  onsubmit="newsLetter(); reset(); return false;"
+                  class="fn-form"
+                >
+                  <input type="email" id="news" placeholder="Email" />
                   <button type="submit"><i class="fa fa-send"></i></button>
                 </form>
               </div>
@@ -290,17 +289,6 @@
     </footer>
     <!-- Footer Section End -->
 
-    <!-- Search model Begin -->
-    <div class="search-model">
-      <div class="h-100 d-flex align-items-center justify-content-center">
-        <div class="search-close-switch"><i class="icon_close"></i></div>
-        <form class="search-model-form">
-          <input type="text" id="search-input" placeholder="Search here....." />
-        </form>
-      </div>
-    </div>
-    <!-- Search model end -->
-
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -310,5 +298,7 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
