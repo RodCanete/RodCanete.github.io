@@ -46,22 +46,13 @@
       <div class="canvas-close">
         <i class="icon_close"></i>
       </div>
-      <div class="search-icon search-switch">
-        <i class="icon_search"></i>
-      </div>
       <div class="header-configure-area">
         <div class="language-option">
           <img
             src="img/flag.jpg"
             alt="An Image of United Kingdom Flag to Represent Language Used"
           />
-          <span>EN <i class="fa fa-angle-down"></i></span>
-          <div class="flag-dropdown">
-            <ul>
-              <li><a href="#">Zi</a></li>
-              <li><a href="#">Fr</a></li>
-            </ul>
-          </div>
+          <span>EN</span>
         </div>
       </div>
       <nav class="mainmenu mobile-menu">
@@ -69,9 +60,8 @@
           <li class="active"><a href="./index.html">Home</a></li>
           <li><a href="./rooms.html">Rooms</a></li>
           <li><a href="./about-us.html">About Us</a></li>
-          <li> <a href="./dining.html">Dining</a>
-          </li>
-          <li><a href="./blog.html">Offers</a></li>
+          <li><a href="./dining.html">Dining</a></li>
+          <li><a href="./offers.html">Offers</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -117,13 +107,7 @@
                     src="img/flag.jpg"
                     alt="An Image of United Kingdom Flag to Represent Language Used"
                   />
-                  <span>EN <i class="fa fa-angle-down"></i></span>
-                  <div class="flag-dropdown">
-                    <ul>
-                      <li><a href="#">Zi</a></li>
-                      <li><a href="#">Fr</a></li>
-                    </ul>
-                  </div>
+                  <span>EN</span>
                 </div>
               </div>
             </div>
@@ -150,7 +134,7 @@
                     <li>
                       <a href="./dining.html">Dining</a>
                     </li>
-                    <li><a href="./blog.html">Offers</a></li>
+                    <li><a href="./offers.html">Offers</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                   </ul>
                 </nav>
@@ -186,7 +170,10 @@
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="room-item">
-              <img src="img/room/room-1.jpg" alt="" />
+              <img
+                src="img/room/room-1.jpg"
+                alt="An Image Featuring Amanviro's Premium King Room"
+              />
               <div class="ri-text">
                 <h4>Premium King Room</h4>
                 <h3>₱10,780<span>/Pernight</span></h3>
@@ -218,10 +205,13 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="room-item">
-              <img src="img/room/room-2.jpg" alt="" />
+              <img
+                src="img/room/room-2.jpg"
+                alt="An Image Featuring Amanviro's Deluxe Room"
+              />
               <div class="ri-text">
                 <h4>Deluxe Room</h4>
-                <h3> ₱9,550<span>/Pernight</span></h3>
+                <h3>₱9,550<span>/Pernight</span></h3>
                 <table>
                   <tbody>
                     <tr>
@@ -250,7 +240,10 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="room-item">
-              <img src="img/room/room-3.jpg" alt="" />
+              <img
+                src="img/room/room-3.jpg"
+                alt="An Image Featuring Amanviro's Double Room"
+              />
               <div class="ri-text">
                 <h4>Double Room</h4>
                 <h3>₱6,950<span>/Pernight</span></h3>
@@ -282,7 +275,10 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="room-item">
-              <img src="img/room/room-5.jpg" alt="" />
+              <img
+                src="img/room/room-b4.png"
+                alt="An Image Featuring Amanviro's Family Room"
+              />
               <div class="ri-text">
                 <h4>Family Room</h4>
                 <h3>₱12,500<span>/Pernight</span></h3>
@@ -306,7 +302,9 @@
                     </tr>
                   </tbody>
                 </table>
-                <a href="./room-details4.html" class="primary-btn">More Details</a>
+                <a href="./room-details4.html" class="primary-btn"
+                  >More Details</a
+                >
               </div>
             </div>
           </div>
@@ -332,9 +330,7 @@
                     />
                   </a>
                 </div>
-                <p>
-                  Relax in a Serene and Tranquil Paradise<br />
-                </p>
+                <p>Relax in a Serene and Tranquil Paradise<br /></p>
                 <div class="fa-social">
                   <a href="https://www.facebook.com/amanviro"
                     ><i class="fa fa-facebook"></i
@@ -359,8 +355,11 @@
               <div class="ft-newslatter">
                 <h6>New latest</h6>
                 <p>Get the latest updates and offers.</p>
-                <form action="#" class="fn-form">
-                  <input type="text" placeholder="Email" />
+                <form
+                  onsubmit="newsLetter(); reset(); return false;"
+                  class="fn-form"
+                >
+                  <input type="email" id="news" placeholder="Email" />
                   <button type="submit"><i class="fa fa-send"></i></button>
                 </form>
               </div>
@@ -389,17 +388,6 @@
     </footer>
     <!-- Footer Section End -->
 
-    <!-- Search model Begin -->
-    <div class="search-model">
-      <div class="h-100 d-flex align-items-center justify-content-center">
-        <div class="search-close-switch"><i class="icon_close"></i></div>
-        <form class="search-model-form">
-          <input type="text" id="search-input" placeholder="Search here....." />
-        </form>
-      </div>
-    </div>
-    <!-- Search model end -->
-
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -409,5 +397,7 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

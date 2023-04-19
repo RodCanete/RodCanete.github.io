@@ -46,22 +46,13 @@
       <div class="canvas-close">
         <i class="icon_close"></i>
       </div>
-      <div class="search-icon search-switch">
-        <i class="icon_search"></i>
-      </div>
       <div class="header-configure-area">
         <div class="language-option">
           <img
             src="img/flag.jpg"
             alt="An Image of United Kingdom Flag to Represent Language Used"
           />
-          <span>EN <i class="fa fa-angle-down"></i></span>
-          <div class="flag-dropdown">
-            <ul>
-              <li><a href="#">Zi</a></li>
-              <li><a href="#">Fr</a></li>
-            </ul>
-          </div>
+          <span>EN</span>
         </div>
       </div>
       <nav class="mainmenu mobile-menu">
@@ -71,7 +62,7 @@
           <li><a href="./about-us.html">About Us</a></li>
          <li> <a href="./dining.html">Dining</a>
           </li>
-          <li><a href="./blog.html">Offers</a></li>
+          <li><a href="./offers.html">Offers</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -117,13 +108,7 @@
                     src="img/flag.jpg"
                     alt="An Image of United Kingdom Flag to Represent Language Used"
                   />
-                  <span>EN <i class="fa fa-angle-down"></i></span>
-                  <div class="flag-dropdown">
-                    <ul>
-                      <li><a href="#">Zi</a></li>
-                      <li><a href="#">Fr</a></li>
-                    </ul>
-                  </div>
+                  <span>EN</span>
                 </div>
               </div>
             </div>
@@ -150,13 +135,10 @@
                     <li>
                       <a href="./dining.html">Dining</a>
                     </li>
-                    <li><a href="./blog.html">Offers</a></li>
+                    <li><a href="./offers.html">Offers</a></li>
                     <li class="active"><a href="./contact.html">Contact</a></li>
                   </ul>
                 </nav>
-                <div class="nav-right search-switch">
-                  <i class="icon_search"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -199,7 +181,7 @@
                 <input type="text" name="_honey" style="display: none;">
 
                 <!-- Disable Captcha -->
-                <input type="hidden" name="_captcha value="false">
+                <input type="hidden" name="_captcha" value= "false">
                 
                 <div class="col-lg-6">
                   <input type="text" id="name" placeholder="Your Name" required/>
@@ -223,6 +205,20 @@
             style="border: 0"
             allowfullscreen=""
           ></iframe>
+        </div>
+        <div class="rand-info">    
+          <div>
+            <h3 class="info">Check-in & Check Out</h3>
+            <p class="info-txt">We hope you’ve enjoyed your stay from start to finish.<br>
+            Please note the check-in / out times below:</p>
+
+            <p class="info-txt">Check-in: 2:30 PM<br>
+            Check-out: 11:30 AM</p>
+          </div>
+          <div>
+            <h3 class="info">Taxis / Grab / Maxim</h3>
+            <p class="info-txt">The journey to and from the resort is no more than a 3-hour drive from the City of Cebu and costs approximately between PHP 700 and PHP 900.<br>
+          </div>
         </div>
       </div>
     </section>
@@ -271,8 +267,8 @@
               <div class="ft-newslatter">
                 <h6>New latest</h6>
                 <p>Get the latest updates and offers.</p>
-                <form action="#" class="fn-form">
-                  <input type="text" placeholder="Email" />
+                <form onsubmit="newsLetter(); reset(); return false;" class="fn-form">
+                  <input type="email" id="news" placeholder="Email" />
                   <button type="submit"><i class="fa fa-send"></i></button>
                 </form>
               </div>
@@ -301,17 +297,6 @@
     </footer>
     <!-- Footer Section End -->
 
-    <!-- Search model Begin -->
-    <div class="search-model">
-      <div class="h-100 d-flex align-items-center justify-content-center">
-        <div class="search-close-switch"><i class="icon_close"></i></div>
-        <form class="search-model-form">
-          <input type="text" id="search-input" placeholder="Search here....." />
-        </form>
-      </div>
-    </div>
-    <!-- Search model end -->
-
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -321,6 +306,7 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
     <!-- Add -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
@@ -336,7 +322,7 @@
                + "<br> Email: " + document.getElementById("email").value
                + "<br> Message: " + document.getElementById("message").value
         }).then(
-          message => alert(message)
+          message => alert("Your inquiry has been sent. Thank you!")
         );
       }
     </script>
