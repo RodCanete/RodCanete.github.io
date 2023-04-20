@@ -1403,23 +1403,23 @@ height: 100%;
 }
 
 /*---------------------
-  Blog Section
+  Offers Section
 -----------------------*/
 
-.blog-section.blog-page {
+.offer-section.offer-page {
 	padding-top: 0;
 	padding-bottom: 88px;
 }
-.blog-item {
+.offer-item {
 	height: 450px;
 	position: relative;
 	margin-bottom: 30px;
 	border-radius: 5px;
 }
-.blog-item.small-size {
+.offer-item.small-size {
 	height: 400px;
 }
-.blog-item .bi-text {
+.offer-item .bi-text {
 	position: absolute;
 	left: 0;
 	bottom: 25px;
@@ -1427,7 +1427,7 @@ height: 100%;
 	padding-left: 30px;
 	padding-right: 30px;
 }
-.blog-item .bi-text .b-tag {
+.offer-item .bi-text .b-tag {
 	display: inline-block;
 	color: #ffffff;
 	font-size: 15px;
@@ -1437,26 +1437,26 @@ height: 100%;
 	padding: 3px 10px;
 	border-radius: 2px;
 }
-.blog-item .bi-text h6 {
+.offer-item .bi-text h6 {
 	margin-top: 18px;
 	margin-bottom: 18px;
 }
-.blog-item .bi-text h6 {
+.offer-item .bi-text h6 {
 	color: #ffffff;
 	font-weight: 500;
 	letter-spacing: 1px;
 }
-.blog-item .bi-text .b-time {
+.offer-item .bi-text .b-time {
 	font-size: 10px;
 	color: #ffffff;
 	letter-spacing: 3px;
 }
 
 /*----------------------------
-  Blog Details Hero Section
+  Offers Details Hero Section
 ----------------------------*/
 
-.blog-details-hero {
+.offer-details-hero {
 	height: 530px;
 	padding-top: 165px;
 }
@@ -1496,60 +1496,60 @@ height: 100%;
 }
 
 /*---------------------
-  Blog Details Section
+  Offers Details Section
 -----------------------*/
 
-.blog-details-section {
+.offer-details-section {
 	padding-top: 55px;
 }
-.blog-details-text .bd-title {
+.offer-details-text .bd-title {
 	margin-bottom: 52px;
 }
-.blog-details-text .bd-title p {
+.offer-details-text .bd-title p {
 	font-size: 18px;
 	color: #707079;
 	line-height: 30px;
 }
-.blog-details-text .bd-pic {
+.offer-details-text .bd-pic {
 	overflow: hidden;
 	margin-bottom: 35px;
 }
-.blog-details-text .bd-pic .bp-item {
+.offer-details-text .bd-pic .bp-item {
 	width: calc(33.33% - 10px);
 	float: left;
 	margin-right: 15px;
 }
-.blog-details-text .bd-pic .bp-item:last-child {
+.offer-details-text .bd-pic .bp-item:last-child {
 	margin-right: 0;
 }
-.blog-details-text .bd-pic .bp-item img {
+.offer-details-text .bd-pic .bp-item img {
 	min-width: 100%;
 }
-.blog-details-text .bd-more-text {
+.offer-details-text .bd-more-text {
 	margin-bottom: 50px;
 }
-.blog-details-text .bd-more-text .bm-item {
+.offer-details-text .bd-more-text .bm-item {
 	margin-bottom: 30px;
 }
-.blog-details-text .bd-more-text .bm-item h4 {
+.offer-details-text .bd-more-text .bm-item h4 {
 	color: #19191a;
 	margin-bottom: 20px;
 }
-.blog-details-text .bd-more-text .bm-item p {
+.offer-details-text .bd-more-text .bm-item p {
 	font-size: 18px;
 	color: #707079;
 	line-height: 30px;
 }
-.blog-details-text {
+.offer-details-text {
 	overflow: hidden;
 	border-top: 1px solid #ebebeb;
 	padding-top: 30px;
 	margin-bottom: 75px;
 }
-.blog-details-text {
+.offer-details-text {
 	float: left;
 }
-.blog-details-text {
+.offer-details-text {
 	font-size: 12px;
 	color: #707079;
 	background: #ebebeb;
@@ -1564,39 +1564,39 @@ height: 100%;
 	transition: all 0.3s;
 	margin-right: 6px;
 }
-.blog-details-text {
+.offer-details-text {
 	color: #ffffff;
 	background: #A7727D
 	;
 }
-.blog-details-text {
+.offer-details-text {
 	float: right;
 }
-.blog-details-text {
+.offer-details-text {
 	display: inline-block;
 	font-size: 18px;
 	color: #707079;
 }
-.blog-details-text {
+.offer-details-text {
 	display: inline-block;
 	font-size: 16px;
 	color: #707079;
 	margin-left: 30px;
 }
-.blog-details-text {
+.offer-details-text {
 	margin-bottom: 75px;
 }
-.blog-details-text {
+.offer-details-text {
 	color: #19191a;
 	margin-bottom: 35px;
 }
-.blog-details-text {
+.offer-details-text {
 	margin-bottom: 30px;
 }
-.blog-details-text .sc-text {
+.offer-details-text .sc-text {
 	padding-left: 22px;
 }
-.blog-details-text .sc-text:before {
+.offer-details-text .sc-text:before {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1605,14 +1605,14 @@ height: 100%;
 	background: #ebebeb;
 	content: "";
 }
-.blog-details-text {
+.offer-details-text {
 	padding-left: 120px;
 	margin-bottom: 52px;
 }
-.blog-details-text .sc-text {
+.offer-details-text .sc-text {
 	padding-left: 22px;
 }
-.blog-details-text .sc-text:before {
+.offer-details-text .sc-text:before {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1621,36 +1621,36 @@ height: 100%;
 	background: #ebebeb;
 	content: "";
 }
-.blog-details-text {
+.offer-details-text {
 	float: left;
 	margin-right: 28px;
 }
-.blog-details-text {
+.offer-details-text {
 	height: 70px;
 	width: 70px;
 	border-radius: 50%;
 }
-.blog-details-text .sc-text {
+.offer-details-text .sc-text {
 	display: table;
 	position: relative;
 }
-.blog-details-text .sc-text span {
+.offer-details-text .sc-text span {
 	font-size: 12px;
 	color: #A7727D;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
-.blog-details-text .sc-text h5 {
+.offer-details-text .sc-text h5 {
 	font-size: 20px;
 	color: #19191a;
 	margin-top: 4px;
 	margin-bottom: 8px;
 }
-.blog-details-text .sc-text p {
+.offer-details-text .sc-text p {
 	color: #707079;
 	margin-bottom: 18px;
 }
-.blog-details-text .sc-text a {
+.offer-details-text .sc-text a {
 	display: inline-block;
 	color: #19191a;
 	font-size: 14px;
@@ -1665,16 +1665,16 @@ height: 100%;
 	transition: all 0.3s;
 	margin-right: 10px;
 }
-.blog-details-text .sc-text a:hover {
+.offer-details-text .sc-text a:hover {
 	background: #A7727D;
 	color: #ffffff;
 	border-color: #A7727D;
 }
-.blog-details-text {
+.offer-details-text {
 	color: #19191a;
 	margin-bottom: 35px;
 }
-.blog-details-text {
+.offer-details-text {
 	width: 100%;
 	height: 50px;
 	color: #707079;
@@ -1687,10 +1687,10 @@ height: 100%;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
-.blog-details-text {
+.offer-details-text {
 	border-color: #A7727D;
 }
-.blog-details-text {
+.offer-details-text {
 	width: 100%;
 	height: 116px;
 	color: #707079;
@@ -1705,10 +1705,10 @@ height: 100%;
 	resize: none;
 	padding-top: 12px;
 }
-.blog-details-text {
+.offer-details-text {
 	border-color: #A7727D;
 }
-.blog-details-text {
+.offer-details-text {
 	font-size: 13px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -2233,6 +2233,10 @@ height: 100%;
 	.menu-food-name, .menu-food-price {
 		font-size: 15px;
 	}
+	.rand-info {
+		display: grid; 
+		grid-template-columns: 1fr;
+	}
 }
 
 /* Large Mobile: 480px */
@@ -2255,11 +2259,11 @@ height: 100%;
 	.footer-section .copyright-option ul li {
 		margin-right: 25px;
 	}
-	.blog-details-text .tag-share .tags {
+	.offer-details-text .tag-share .tags {
 		float: none;
 		margin-bottom: 20px;
 	}
-	.blog-details-text .tag-share .social-share {
+	.offer-details-text .tag-share .social-share {
 		float: none;
 	}
 	.about-text .section-title h2 {
@@ -2302,6 +2306,10 @@ height: 100%;
 		margin-bottom: 0px;
 		color: #212529;
 		font-size: 12px;
+	}
+	.rand-info {
+		display: grid; 
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -2384,35 +2392,35 @@ height: 100%;
 	.footer-section .copyright-option ul li {
 		margin-bottom: 5px;
 	}
-	.rd-reviews .review-item .ri-pic, .blog-details-text {
+	.rd-reviews .review-item .ri-pic, .offer-details-text {
 		float: none;
 		margin-bottom: 30px;
 	}
 	.rd-reviews .review-item .ri-text .rating {
 		position: relative;
 	}
-	.rd-reviews .review-item .ri-text, .blog-details-text .sc-text, .blog-details-text .sc-text {
+	.rd-reviews .review-item .ri-text, .offer-details-text .sc-text, .offer-details-text .sc-text {
 		padding-left: 0;
 	}
-	.blog-details-text .comment-option .single-comment-item.reply-comment {
+	.offer-details-text .comment-option .single-comment-item.reply-comment {
 		padding-left: 30px;
 	}
-	.rd-reviews .review-item .ri-text:before, .blog-details-text .sc-text:before, .blog-details-text .sc-text:before {
+	.rd-reviews .review-item .ri-text:before, .offer-details-text .sc-text:before, .offer-details-text .sc-text:before {
 		display: none;
 	}
-	.blog-details-hero {
+	.offer-details-hero {
 		padding-top: 70px;
 	}
-	.blog-details-text .bd-pic .bp-item {
+	.offer-details-text .bd-pic .bp-item {
 		width: 100%;
 		float: none;
 		margin-right: 0;
 		margin-bottom: 10px;
 	}
-	.blog-details-text {
+	.offer-details-text {
 		margin-bottom: 6px;
 	}
-	.blog-details-text .sc-text a {
+	.offer-details-text .sc-text a {
 		margin-bottom: 10px;
 	}
 	.dining-main-img {
