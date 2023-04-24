@@ -254,56 +254,13 @@ a.no-after:after {
 	right: 0;
 	z-index: 999;
 }
-.spacial-controls .search-switch {
+.spacial-controls {
 	display: block;
 	height: 100%;
 	padding-top: 30px;
 	background: #323232;
 	text-align: center;
 	cursor: pointer;
-}
-.search-model {
-	display: none;
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: #000;
-	z-index: 99999;
-}
-.search-model-form {
-	padding: 0 15px;
-}
-.search-model-form input {
-	width: 500px;
-	font-size: 40px;
-	border: none;
-	border-bottom: 2px solid #333;
-	background: none;
-	color: #999;
-}
-.search-close-switch {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	background: #333;
-	color: #fff;
-	text-align: center;
-	border-radius: 50%;
-	font-size: 28px;
-	line-height: 28px;
-	top: 30px;
-	cursor: pointer;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
 }
 
 /*---------------------
@@ -1225,17 +1182,14 @@ height: 100%;
 	padding-top: 5px;
 	padding-bottom: 50px;
 }
-.menu-choices :hover {
-	transform: scale(1.63);
+.menu-choices :hover{
+	transform: scale(1.53);
 	background: #F6F6F6;
 	box-shadow: 2px 2px 2px #F6F6F6;
 	z-index: 99;
 	transition: 0.6s;
 }
-.menu :not(:hover) {
-	transform: scale(1.0);
-	transition: 0.6s;
-}
+
 .menu img {
 	height: 90%;
 	width: auto;
@@ -1981,7 +1935,7 @@ height: 100%;
 		top: 30px;
 		padding-right: 1px;
 	}
-	.offcanvas-menu-wrapper .search-icon {
+	.offcanvas-menu-wrapper {
 		color: #19191a;
 		text-align: center;
 		cursor: pointer;
@@ -2239,6 +2193,13 @@ height: 100%;
 		display: grid; 
 		grid-template-columns: 1fr;
 	}
+	.menu-choices :hover {
+		transform: scale(1);
+		background: #F6F6F6;
+		box-shadow: 2px 2px 2px #F6F6F6;
+		z-index: 99;
+		transition: 0.6s;
+	}
 }
 
 @media only screen and (min-width: 635px) and (max-width: 688px) {
@@ -2272,6 +2233,13 @@ height: 100%;
 		margin-bottom: 0px;
 		color: #212529;
 		font-size: 12px;
+	}
+	.menu-choices :hover {
+		transform: scale(1);
+		background: #F6F6F6;
+		box-shadow: 2px 2px 2px #F6F6F6;
+		z-index: 99;
+		transition: 0.6s;
 	}
 	}
 
@@ -2311,6 +2279,13 @@ height: 100%;
 				width: 100%;
 				position: relative;
 				padding-right: 20px;
+			}
+			.menu-choices :hover {
+				transform: scale(1);
+				background: #F6F6F6;
+				box-shadow: 2px 2px 2px #F6F6F6;
+				z-index: 99;
+				transition: 0.6s;
 			}
 		}
 
@@ -2356,6 +2331,13 @@ height: 100%;
 		position: relative;
 		padding-right: 20px;
 		padding-left: 20px;
+	}
+	.menu-choices :hover {
+		transform: scale(1);
+		background: #F6F6F6;
+		box-shadow: 2px 2px 2px #F6F6F6;
+		z-index: 99;
+		transition: 0.6s;
 	}
 }
 @media (max-width: 1300px) {
