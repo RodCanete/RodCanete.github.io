@@ -1229,7 +1229,7 @@ height: 100%;
 	transform: scale(1.63);
 	background: #F6F6F6;
 	box-shadow: 2px 2px 2px #F6F6F6;
-	z-index: 5;
+	z-index: 99;
 	transition: 0.6s;
 }
 .menu :not(:hover) {
