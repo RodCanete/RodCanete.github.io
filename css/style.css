@@ -607,7 +607,14 @@ a.no-after:after {
   	width: 600px;
 }
 
-
+video {
+	left: 0;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding-bottom: 30px;
+	object-fit: cover;
+  }
 /*---------------------
   Service Section
 -----------------------*/
